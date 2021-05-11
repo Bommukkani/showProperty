@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tv_margin_size"
+        android:gravity="center"
+        android:text="@string/properties"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/tv_title_size"
+        android:textStyle="bold"></TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <TextView
+            android:id="@+id/tvDeviceBatteryLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tv_margin_size"
+            android:layout_toRightOf="@+id/cbBatteryLevel"
+            android:text="@string/device_battery_level"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/cbDeviceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbBatteryLevel"></CheckBox>
+
+
+        <TextView
+            android:id="@+id/tvDeviceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbBatteryLevel"
+            android:layout_margin="@dimen/tv_margin_size"
+            android:layout_toRightOf="@+id/cbDeviceInfo"
+            android:text="@string/deviceName_osVersion"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <CheckBox
+
+            android:id="@+id/cbNetworkType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbDeviceInfo"></CheckBox>
+
+        <TextView
+            android:id="@+id/tvNetworkType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbDeviceInfo"
+            android:layout_margin="@dimen/tv_margin_size"
+            android:layout_toRightOf="@+id/cbNetworkType"
+            android:text="@string/current_networ_type"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <CheckBox
+
+            android:id="@+id/cbStorageCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbNetworkType"></CheckBox>
+
+
+        <TextView
+            android:id="@+id/tvStorageCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbNetworkType"
+            android:layout_margin="@dimen/tv_margin_size"
+            android:layout_toRightOf="@+id/cbStorageCapacity"
+            android:text="@string/availableDeviceStorage"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <CheckBox
+
+            android:id="@+id/cbWeatherReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbStorageCapacity"></CheckBox>
+
+
+        <TextView
+            android:id="@+id/tvCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbStorageCapacity"
+            android:layout_margin="@dimen/tv_margin_size"
+            android:layout_toRightOf="@+id/cbWeatherReport"
+            android:text="@string/weatherReport"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_text_size"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/time_inter"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Submit"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

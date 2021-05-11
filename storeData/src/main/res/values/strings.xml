@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StoreData</string>
+    <string name="label_shared_user">sharedUserLabel</string>
+    <string name="api_key_value">76725dc386db3c079dd19d098ede596a</string>
+    <string name="device_battery_level">Device Battery Level</string>
+    <string name="deviceName_osVersion">Device Name and OS Version</string>
+    <string name="current_networ_type">Current Network Type(Mobile network or Wi-Fi network)</string>
+    <string name="availableDeviceStorage">Available Device Storage Capacity (Internal and External)</string>
+    <string name="weatherReport">Weather Report of Current Location</string>
+    <string name="properties">Properties</string>
+</resources>

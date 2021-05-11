@@ -1,0 +1,4 @@
+include ':showData'
+include ':displayData'
+include ':storeData'
+rootProject.name = "showData"
